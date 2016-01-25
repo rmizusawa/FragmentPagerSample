@@ -26,7 +26,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     }
 
     public void destroyAllItem(ViewPager pager) {
-
+        // -1が正しいかは要チェックです
         for (int i = 0; i < getCount() - 1; i++) {
             try {
                 Object objectobject = this.instantiateItem(pager, i);
